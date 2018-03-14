@@ -1,6 +1,12 @@
+/etc/httpd/extra/httpd-vhosts.conf:
+  file.managed:
+    - source: salt://webserver/httpd-vhosts.conf
+    
 apache2:
   pkg.installed: []
   service.running:
+    - watch:
+      - file: /etc/httpd/extra/httpd-vhosts.conf
     - require:
       - pkg: apache2
       
