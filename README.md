@@ -15,9 +15,9 @@ pip install pyyaml
 apt install libssl-dev -y
 apt install make -y
 apt install cmake -y
-wget https://github.com/libgit2/libgit2/archive/v0.24.0.tar.gz
-tar xzf v0.24.0.tar.gz
-cd libgit2-0.24.0/
+wget https://github.com/libgit2/libgit2/archive/v0.26.3.tar.gz
+tar xzf v0.26.3.tar.gz
+cd libgit2-0.26.3/
 cmake .
 make
 make install
