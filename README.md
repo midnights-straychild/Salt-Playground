@@ -13,6 +13,7 @@ pip install --upgrade pip
 pip install pyyaml
 # installing pygit2 + HTTPS support
 apt install libssl-dev -y
+apt install make -y
 apt install cmake -y
 wget https://github.com/libgit2/libgit2/archive/v0.24.0.tar.gz
 tar xzf v0.24.0.tar.gz
